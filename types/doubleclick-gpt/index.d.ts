@@ -155,15 +155,15 @@ declare namespace googletag {
         }
 
         export interface SlotRenderEndedEvent {
-            advertiserId?: number;
-            creativeId?: number;
+            advertiserId: number | null;
+            creativeId: number | null;
             isEmpty: boolean;
-            lineItemId?: number;
+            lineItemId: number | null;
             serviceName: string;
-            size: number[] | string;
+            size: number[] | string | null;
             slot: Slot;
-            sourceAgnosticCreativeId?: number;
-            sourceAgnosticLineItemId?: number;
+            sourceAgnosticCreativeId?: number | null;
+            sourceAgnosticLineItemId?: number | null;
         }
 
         export interface slotVisibilityChangedEvent {
